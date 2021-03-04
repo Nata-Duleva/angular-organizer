@@ -1,0 +1,35 @@
+$primary: #dc3545;
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+
+  td, th {
+    border: 2px solid #000000;
+    padding: 0.5rem 1rem;
+  }
+
+  td {
+    text-align: center;
+    transition: all 0.2s;
+
+
+    &.disabled {
+      opacity: 0.5;
+    }
+
+    &:hover:not(.disabled) {
+      background: #eeeeee;
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  .selected {
+    color: blue;
+  }
+}
